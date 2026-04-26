@@ -293,7 +293,7 @@ function HomePage() {
       </section>
 
       {/* COUVERTURE NATIONALE */}
-      <section className="py-24 bg-[var(--navy)]">
+      <section className="py-24 bg-white">
         <div className="container-page grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div {...fadeUp} className="flex justify-center">
             <MadagascarMap className="w-full max-w-sm h-auto" />
