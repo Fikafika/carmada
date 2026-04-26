@@ -23,16 +23,30 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { toast } from "sonner";
 import heroImg from "@/assets/hero-suv.jpg";
-import partnerMadaLogistics from "@/assets/partners/mada-logistics.png";
-import partnerVanex from "@/assets/partners/vanille-export.png";
-import partnerIndigoBtp from "@/assets/partners/indigo-btp.png";
-import partnerOceanHotels from "@/assets/partners/ocean-hotels.png";
+import partnerJica from "@/assets/partners/jica.png";
+import partnerAirtel from "@/assets/partners/airtel.png";
+import partnerFmfp from "@/assets/partners/fmfp.png";
+import partnerEnermech from "@/assets/partners/enermech.png";
+import partnerMsh from "@/assets/partners/msh.png";
+import partnerSbm from "@/assets/partners/sbm.png";
+import partnerFtl from "@/assets/partners/ftl.jpg";
+import partnerVoyageur from "@/assets/partners/le-voyageur.jpg";
+import partnerScc from "@/assets/partners/scc.jpg";
+import partnerSharaf from "@/assets/partners/sharaf.png";
+import partnerWebhelp from "@/assets/partners/webhelp.jpg";
 
 const partners = [
-  { name: "Mada Logistics", logo: partnerMadaLogistics },
-  { name: "Vanex", logo: partnerVanex },
-  { name: "Indigo BTP", logo: partnerIndigoBtp },
-  { name: "Océan Hôtels", logo: partnerOceanHotels },
+  { name: "JICA", logo: partnerJica },
+  { name: "Airtel", logo: partnerAirtel },
+  { name: "FMFP", logo: partnerFmfp },
+  { name: "EnerMech", logo: partnerEnermech },
+  { name: "MSH", logo: partnerMsh },
+  { name: "SBM Bank", logo: partnerSbm },
+  { name: "FTL", logo: partnerFtl },
+  { name: "Le Voyageur Actif", logo: partnerVoyageur },
+  { name: "SCC", logo: partnerScc },
+  { name: "Sharaf Shipping Agency", logo: partnerSharaf },
+  { name: "Webhelp", logo: partnerWebhelp },
 ];
 
 export const Route = createFileRoute("/")({
@@ -372,7 +386,7 @@ function HomePage() {
 
           <motion.div
             {...fadeUp}
-            className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 items-center"
+            className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-4 items-center"
           >
             {partners.map((p) => (
               <div
